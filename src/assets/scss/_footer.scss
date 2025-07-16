@@ -1,0 +1,65 @@
+//start footer style
+footer {
+    .row:first-child {
+        @include flex(space-around, null, null);
+        @include margin-padding(null, 0 270px 0 130px);
+        background-color: $footer-backgroundColor-rowFirst-footer;
+        height: 270px;
+
+        div {
+            @include flex(null, null, column);
+        }
+
+        a {
+            line-height: $content-lineHeight-footer;
+            color: $content-color-footer;
+        }
+
+        .about-us {
+            h3 {
+                color: $aboutUs-color-title-footer;
+                @include margin-padding(0 0 15px 0, null);
+
+                font: {
+                    family: vazir-bold;
+                }
+            }
+        }
+
+        .sign-up {
+            h4 {
+                color: $signUp-color-title-footer;
+                @include margin-padding(0 0 20px 0, null);
+            }
+
+            .input {
+                input {
+                    @include margin-padding(null, 5px);
+                    outline: 0;
+                    border: 0;
+                }
+
+                button {
+                    background-color: $signUp-button-backgroundColor-footer;
+                    color: $signUp-button-color-footer;
+                    border: 0;
+                    @include margin-padding(null, 5px 15px);
+                    left: 0;
+                    top: 0;
+                    cursor: pointer;
+                }
+
+            }
+        }
+
+    }
+
+    .row:last-child {
+        background-color: $footer-backgroundColor-rowLast-footer;
+
+        h3 {
+            @include margin-padding(null, 20px 0px);
+            color: $footer-color-rowLast-footer;
+        }
+    }
+}

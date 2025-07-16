@@ -1,0 +1,17 @@
+//- start navbar
+div.container#navigation
+    div.row
+        nav.navbar
+            ul.menu
+                each menu in ["خانه","دوره های آموزشی","خدمات ما","درباره ما"]
+                    li
+                        a(href="#")=menu
+            div.social-media-icons
+                a(href="#")
+                    i.fab.fa-google
+                a(href="#")
+                    i.fab.fa-facebook
+                a(href="#")
+                    i.fas.fa-rss
+                a(href="#")
+                    i.fab.fa-telegram

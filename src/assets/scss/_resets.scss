@@ -1,0 +1,72 @@
+// resets
+@font-face {
+    font-family: $font-family-vazir-medium;
+    src: url(../src/assets/font/Vazir-Medium.eot) format(eot),
+        url(../src/assets/font/Vazir-Medium.ttf) format(ttf),
+        url(../src/assets/font/Vazir-Medium.woff) format(woff),
+        url(../src/assets/font/Vazir-Medium.woff2) format(woff2);
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@font-face {
+    font-family: $font-family-vazir-bold;
+    src: url(../src/assets/font/Vazir-Bold.eot) format(eot),
+        url(../src/assets/font/Vazir-Bold.ttf) format(ttf),
+        url(../src/assets/font/Vazir-Bold.woff) format(woff),
+        url(../src/assets/font/Vazir-Bold.woff2) format(woff2);
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+*,
+body {
+    font-family: $font-family-vazir-medium;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-size: $defult-font-size;
+    // overflow-x: hidden;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    max-width: 1450px;
+    margin: auto;
+    position: relative;
+}
+
+.row {
+    @include flex();
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
