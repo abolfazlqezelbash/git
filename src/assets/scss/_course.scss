@@ -1,0 +1,104 @@
+//start education-course style
+#course {
+    .background-image {
+        top: 50%;
+        right: 15.7%;
+    }
+
+    .row {
+        @include margin-padding(0 0 350px 0, null);
+        @include flex(space-between, null);
+
+        .card {
+            @include flex-basis(30%, column);
+            border: $card-border-color-course;
+            cursor: pointer;
+
+            .teacher {
+                width: 70px;
+                top: -60px;
+                right: 20px;
+                transition: all .4s ease;
+            }
+
+            .teacher-name {
+                top: -50px;
+                width: 190px;
+                height: 25px;
+                right: 100px;
+                color: $card-teacher-name-color;
+                overflow: hidden;
+
+                span {
+                    white-space: nowrap;
+                    position: absolute;
+                    top: 0;
+                    right: -100%;
+                    transition: all .5s ease .15s;
+                }
+            }
+
+            .card-header {
+                position: relative;
+
+                .status {
+                    @include margin-padding(null, 3px);
+                    background-color: $card-header-status-background-Color-course;
+                    color: $card-header-status-Color-course;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+
+                    font: {
+                        // family: vazir-bold;
+                        size: $defult-font-size - 2;
+                    }
+                }
+            }
+
+            .card-body {
+                background-color: $card-body-backgroundColor-course;
+                color: $card-body-color-course;
+
+                h2 {
+                    @include margin-padding(null, 15px 5px);
+                    border-bottom: $card-body-border-h2-color-course;
+                }
+            }
+
+            .card-footer {
+                @include flex(space-between, null);
+                @include margin-padding(null, 10px 5px);
+                background-color: $card-footer-backgroundColor-course;
+                color: $card-footer-color-course;
+                font-size: $defult-font-size - 2;
+
+                span i {
+                    color: $card-footer-i-color-course;
+                }
+
+                span:nth-child(1) i {
+                    @include margin-padding(0 4px 0 0, null);
+                }
+
+                span:nth-child(2) {
+                    color: $card-footer-color-notFree-course;
+                }
+            }
+
+            transition: all .5s ease;
+
+            &:hover {
+                box-shadow: $boxShadow-color-white;
+            }
+
+            &:hover .teacher {
+                top: -90px;
+            }
+
+            &:hover .teacher-name span {
+                right: 0;
+            }
+        }
+    }
+}

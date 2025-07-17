@@ -1,0 +1,35 @@
+//start path style
+#path {
+    .row {
+        @include margin-padding(0 0 120px 0, null);
+        @include flex(space-between, null);
+
+        .right {
+            @include flex-basis(40%);
+        }
+
+        .left {
+            @include flex-basis(55%);
+            @include flex();
+
+            .content {
+                text-align: center;
+
+                h2 {
+                    @include margin-padding(0 0 12px 0, null);
+                    color: $left-content-color-h2-path;
+
+                    font: {
+                        family: vazir-bold;
+                        size: $defult-font-size * 1.7;
+                    }
+                }
+
+                p {
+                    color: $left-content-color-p-path;
+                    line-height: $left-content-lineHeight-p-path;
+                }
+            }
+        }
+    }
+}

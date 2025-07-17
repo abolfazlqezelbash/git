@@ -1,0 +1,63 @@
+// poblic
+$defult-font-size: 16px;
+$boxShadow-color-white: 0 0 15px 0 #dadada;
+
+// fonts variable
+$font-family-vazir-medium: vazir-medium;
+$font-family-vazir-bold: vazir-bold;
+$font-weight: 600;
+$font-style: normal;
+
+// navbar variable
+$height-size-navbar: 60px;
+$background-color-navbar: #fff;
+$color-navbar: #555;
+$color-hover-menu-navbar: #999;
+$border-bottom-color-navbar: 2px solid #c9c9c921;
+
+// header variable
+$left-content-color-h1-header: #555;
+$left-content-color-h3-header: #999;
+$left-content-fontSize-h1-header: $defult-font-size * 2;
+$left-content-fontSize-h3-header: $defult-font-size + 2;
+
+// education-course variable
+$card-border-color-course: 1px solid #efefef;
+$card-teacher-name-color: #444;
+$card-header-status-background-Color-course: #9898ee;
+$card-header-status-Color-course: #fff;
+$card-body-backgroundColor-course: #fff;
+$card-body-color-course: #444;
+$card-body-border-h2-color-course: 2px solid #c9c9c936;
+$card-footer-backgroundColor-course: #fff;
+$card-footer-color-course: #999;
+$card-footer-color-notFree-course: darkorange;
+$card-footer-i-color-course: #9898ee;
+
+// path variable
+$left-content-color-h2-path : #555;
+$left-content-color-p-path : #999;
+$left-content-lineHeight-p-path: 1.8;
+
+// topic variable
+$title-color-topic: #555;
+$title-borderColor-topic: 5px solid #ff5757;
+$card-borderColor-topic: 2px solid #efefef;
+$card-header-backgroundColor-topic: #fff;
+$card-header-ovely-color-hover: #00000059;
+$card-body-backgroundColor-topic: #fff;
+$card-body-color-title-topic: #7467e7;
+$card-body-color-meta-topic: #999;
+$card-body-color-content-topic: #555;
+$card-body-lineHeight-content-topic: 1.7;
+
+// footer variable
+$footer-backgroundColor-rowFirst-footer: #444;
+$footer-backgroundColor-rowLast-footer: #333;
+$footer-color-rowLast-footer: #fff;
+$aboutUs-color-title-footer: #fff;
+$content-color-footer: #c2c2c2;
+$content-lineHeight-footer: 2.5;
+$signUp-color-title-footer: gold;
+$signUp-button-backgroundColor-footer: #efefef;
+$signUp-button-color-footer: #555;

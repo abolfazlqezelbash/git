@@ -1,0 +1,19 @@
+// mixins
+@mixin flex($position-x: center, $position-y: center, $flex-direction: row) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $position-x;
+    align-items: $position-y;
+}
+
+@mixin margin-padding($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin flex-basis($flex-basis, $flex-direction: row) {
+    display: flex;
+    flex-direction: $flex-direction;
+    flex-basis: $flex-basis;
+    max-width: $flex-basis;
+}
